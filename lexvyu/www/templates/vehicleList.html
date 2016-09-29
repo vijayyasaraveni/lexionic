@@ -1,0 +1,116 @@
+
+<ion-view ng-controller="vehicleListController">
+
+    <ion-nav-bar class="bar-positive" align-title="center">    
+         <ion-nav-title>
+        Add Vehicle Details
+        </ion-nav-title>
+        
+        <ion-nav-back-button>
+        </ion-nav-back-button>
+    </ion-nav-bar>
+
+<ion-content class="padding has-header">
+  
+    <div class="card" ng-hide="vehicleListEmpty">
+        <div class="item item-text-wrap" style="height: 95px;padding: 26px;">
+            No vehicles found.
+            <span style="display:block;">Please add a new vehicle first.</span>
+        </div>
+    </div>
+
+    <ion-radio ng-repeat="vehicle in vehicles" ng-value="vehicle" ng-model="data.selectedVehicle">
+     <div>
+        <span>Truck - {{vehicle["VehicleRegistration"]}} </span>
+     </div>
+     <div>
+        <span>{{vehicle["VendorName"]}}</span>
+     </div>
+  </ion-radio>
+
+    <!--<ion-list>
+        <ion-item ng-repeat="vehicle in vehicles">
+
+            <ion-radio ng-model="choice" ng-value="'A'">
+                {{vehicle["1"]}}
+            </ion-radio>
+            
+        </ion-item>
+    </ion-list>-->
+
+</ion-content>
+
+<!--<div class="bar bar-footer bar-stable" style="text-align:center;">
+    <button class="button  button-block button-clear nextButton " ng-click="addVehicle()">
+        Add new Vehicle
+    </button>
+</div>-->
+
+<div class="bar bar-footer bar-stable" style="text-align:center;">
+    <button class="button  button-block button-clear nextButton " ng-click="addVehicle()">
+        Next >
+    </button>
+</div>
+
+</ion-view >
+
+
+
+
+<!--<ion-view >
+    
+    <ion-nav-bar class="bar-positive" align-title="center">    
+         <ion-nav-title>
+        Create Trip: 2/4- Select a Vehicle
+        </ion-nav-title>
+        
+        <ion-nav-back-button>
+        </ion-nav-back-button>
+    </ion-nav-bar>
+    
+    
+    <ion-content>
+        
+        <div style="margin-top: 30px;">
+            
+            <div class="col">
+                <b style="    position: relative;  left: 9px; font-size: 16px;">Available Vehicles (4)</B>
+                <img src="images/plus-5-xxl.png" class="plue plusButton" ng-click="addVehicle()">
+            </div>
+            
+            
+            <div class="card">
+                <div class="item item-text-wrap" style="height: 95px;
+        padding: 26px;">
+                No vehicles found.
+                <span style="display:block;">Please add a new vehicle first.</span>
+                </div>
+            </div>
+
+
+
+        <ion-list>
+            <ion-item ng-repeat="vehicle in vehicles">
+                <span>{{vehicle.VehicleRegistration}}</span>
+                {{vehicle.VendorName}}
+            </ion-item>
+        </ion-list>
+            
+            
+        </div>
+        
+        
+        
+        
+        
+    </ion-content>
+    
+    
+    <div class="bar bar-footer bar-stable" style="text-align:center;">
+        <button class="button  button-block button-clear nextButton " ng-click="addVehicle()">
+            Add new Vehicle
+        </button>
+    </div>
+    
+    
+</ion-view>-->

@@ -1,0 +1,98 @@
+<ion-view >
+    
+     <ion-nav-bar class="bar-positive" align-title="center">    
+         <ion-nav-title>
+         Select a Device
+        </ion-nav-title>
+        
+        <ion-nav-back-button>
+        </ion-nav-back-button>
+    </ion-nav-bar>
+    
+    <ion-header-bar class="bar-light bar-subheader">
+
+      <ion-searchbar placeholder="Enter Zipcode" filtertext="search"></ion-searchbar>
+      <!--<input type="text" placeholder="Search Force" data-ng-model="searchForce">
+      <button ng-if="searchForce.length"
+              class="button button-icon ion-android-close input-button"
+              ng-click="clearSearch()">
+      </button>-->
+</ion-header-bar>
+
+
+<ion-content  class="padding has-header">
+         
+
+
+         
+
+
+      <ion-radio ng-repeat="device in devices ">
+        <h3>ID: {{device.DeviceId}}</h3>
+        <h3>EMEI : #{{device.IMEINumber}}</h3>
+      </ion-radio>
+        </ion-content>
+
+
+
+    
+    <!--<ion-content>-->
+        
+         
+
+ 
+ 
+ <!--<div class="list list-inset" >
+ <b style="line-height: 2.5;
+    font-size: 20px;
+    font-weight: normal;     margin-left: 4px;">Select Tracking Devices</b>-->
+  <!--<label class="item item-input">
+    
+    <input type="text" placeholder="Search" style="font-size: 17px;">
+	 <img src="images/i.png" style="width: 30px;
+    margin-right: 12px; "> 
+  </label>-->
+  <!--<b style="    line-height: 3.5;
+    font-size: 18px;
+    font-weight: normal;
+     
+  
+    left: 2px;">Devices matching “22”</b>-->
+
+    <!--<search-bar ng-model="search"></search-bar>-->
+
+<!--</div>-->
+ 
+ <!--<ion-radio ng-repeat="device in devices" ng-value="device" ng-model="data.selectedDevice">
+    {{ device.ExternalDeviceId }}
+  </ion-radio>-->
+ 
+<!--<div class="list" style="margin-top: -22px;
+">
+
+  
+  <a class="item" href="#" style="font-size:19px">
+     ID: 223993BG
+	<p>EMEI # EUIMS90923423490</p>
+  </a>
+
+  <a class="item" href="#" style="font-size:19px">
+    ID: 222590BG
+	<p>EMEI # EUIMS90923423490</p>
+  </a>
+   
+
+</div>-->
+
+
+
+        
+        
+    <!--</ion-content>-->
+    
+    <div class="bar bar-footer  bar-stable">
+  <div class="title" ng-disabled="!data.selectedDevice" ng-click="nextButtonClick()"> Next ></div>
+</div>
+    
+    
+</ion-view>
