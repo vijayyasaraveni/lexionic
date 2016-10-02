@@ -1,0 +1,64 @@
+<ion-view >
+
+<ion-nav-bar class="bar-positive nav-title-slide-ios7" align-title="center">    
+         <ion-nav-title>
+        Add Vehicle Details
+        </ion-nav-title>
+        
+        <!--<ion-nav-buttons side="primary">
+        <button class="button" ng-click="doSomething()">
+            New Button
+        </button>
+    </ion-nav-buttons>-->
+
+        <!--<ion-nav-back-button>
+          Back
+        </ion-nav-back-button>
+
+        <ion-nav-buttons side="right">
+        <button class="button button-clear button-positive" ng-click="reset()">
+            Refresh
+        </button>
+    </ion-nav-buttons>-->
+
+    <!--<ion-nav-buttons side="left"> 
+    Back
+ </ion-nav-buttons>-->
+
+ <ion-nav-back-button>
+          Back
+        </ion-nav-back-button>
+
+ <ion-nav-buttons side="right"> <!-- right -->
+   <button class="button button-icon" ng-click="selectRouteButtonAction()"> Done </button>
+ </ion-nav-buttons>
+
+
+    </ion-nav-bar>
+    
+
+
+ <div class="card">
+    <div class="item">
+    <p>Available Routes ({{routes.length}})</p>
+
+    <p>Selected Value: {{ data.selectedRoute }}</p>
+
+  </div>
+  </div>
+
+
+  <ion-radio ng-repeat="route in routes" ng-value="route" ng-model="data.selectedRoute">
+    {{ route.RouteName }}
+  </ion-radio>
+
+
+  <!--<ion-list>
+  <ion-item ng-repeat="route in routes" >
+    <ion-radio ng-value="route" ng-model="selctedRoute" class="no-padding">
+      {{route.RouteName}}
+    </ion-radio>     
+  </ion-item>
+</ion-list>-->
+
+</ion-view>

@@ -1,8 +1,10 @@
 var app = angular.module('starter.controllers');
 
-app.controller('vehicleListController', function($scope, $state, $location,$http, $ionicLoading, $stateParams, vehicleService){
+app.controller('vehicleListController', function($scope, $state, $location,$http, $ionicLoading, $stateParams, vehicleService, tripFactory, $ionicHistory){
   
-  console.log("selected routeid ::::: "+$stateParams.RouteId);
+  $scope.input = tripFactory;
+
+  console.log("inside vehicleListController ::::: "+JSON.stringify($scope.input));
 
   $scope.vehicles = [];
   $scope.vehiclesCount = 0;
@@ -12,7 +14,7 @@ app.controller('vehicleListController', function($scope, $state, $location,$http
     selectedVehicle: null
   }
 
-  getVehicleList();
+   getVehicleList();
 
   function getVehicleList() {
     $ionicLoading.show();
@@ -22,6 +24,7 @@ app.controller('vehicleListController', function($scope, $state, $location,$http
           applyRemoteVehicleList(response);
           $ionicLoading.hide();
       });
+    
   }
   
   function applyRemoteVehicleList(response){
@@ -36,6 +39,17 @@ app.controller('vehicleListController', function($scope, $state, $location,$http
       // $scope.vehiclesCount = $scope.vehicles.length;
   }
   
+  $scope.selectVehicleButtonAction = function(){
+    
+    $scope.input.vehicle = $scope.data.selectedVehicle;
+
+    console.log("done button action :::::: "+JSON.stringify($scope.input));
+
+    $ionicHistory.goBack();
+
+  }
+
+
   $scope.addVehicle = function(){
 
     console.log("selected Vehicle :::::::: "+$scope.data.selectedVehicle.VehicleId);

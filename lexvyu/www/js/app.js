@@ -3,7 +3,7 @@
 // angular.module is a global place for creating, registering and retrieving Angular modules
 // 'starter' is the name of this angular module example (also set in a <body> attribute in index.html)
 // the 2nd parameter is an array of 'requires'
-angular.module('starter',  ['ionic', 'starter.controllers', 'ui.router', 'starter.services'])
+angular.module('starter',  ['ionic', 'starter.controllers', 'ui.router', 'starter.services', 'starter.factory', 'ionic-datepicker'])
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
@@ -27,37 +27,7 @@ angular.module('starter',  ['ionic', 'starter.controllers', 'ui.router', 'starte
 
   $stateProvider
 
-    .state('login', {
-    url: '/login',
-    templateUrl: 'templates/login.html',
-    controller: 'loginController'
-  })
-
-  .state('home', {
-    url : '/home',
-    templateUrl : 'templates/home.html',
-    controller: 'homePageController'
-  })
-
-  .state('createTrip', {
-    url : '/createTrip',
-    templateUrl : 'templates/createTrip.html',
-    controller: 'createTripController'
-  })
-
-  .state('selectVehicle', {
-    url : '/selectVehicle',
-    params : {'RouteId' : null},
-    templateUrl : 'templates/vehicleList.html',
-    controller : 'vehicleListController'
-  })
-  
-  .state('deviceList', {
-    url : '/deviceList',
-    params : {'routeId': null, 'vehicleId': null},
-    templateUrl: 'templates/deviceList.html',
-    controller: 'deviceListController'
-  })
+   
   
   .state('tripDetails', {
     url : '/tripDetails',
@@ -79,11 +49,7 @@ angular.module('starter',  ['ionic', 'starter.controllers', 'ui.router', 'starte
   })
   
   
-  .state('browseDevices', {
-    url : '/browseDevices',
-    templateUrl : 'templates/browseDevices.html',
-    controller : 'browseDevicesController'
-  })
+  
   
   .state('browseRoutes', {
     url : '/browseRoutes',
@@ -97,12 +63,84 @@ angular.module('starter',  ['ionic', 'starter.controllers', 'ui.router', 'starte
     controller : 'browseVehiclesController'
   })
   
+  
+
+
+
+   .state('login', {
+    url: '/login',
+    templateUrl: 'templates/login.html',
+    controller: 'loginController'
+  })
+
+  .state('home', {
+    url : '/home',
+    templateUrl : 'templates/home.html',
+    controller: 'homePageController'
+  })
+
+  .state('createTrip', {
+    url : '/createTrip',
+    templateUrl : 'templates/createTrip.html',
+    controller: 'createTripController'
+  })
+  .state('routeList', {
+      url: '/routeList',
+      templateUrl: 'templates/routeList.html',
+      controller: 'routeListController'
+  })
+  .state('contractList', {
+        url: '/contractList',
+        templateUrl: 'templates/contractList.html',
+        controller: 'contractListController'
+  })
+  .state('deviceList', {
+    url : '/deviceList',
+    templateUrl: 'templates/deviceList.html',
+    controller: 'deviceListController'
+  })
+  .state('vehicleList', {
+    url : '/vehicleList',
+    templateUrl : 'templates/vehicleList.html',
+    controller : 'vehicleListController'
+  })
+  .state('driverList', {
+    url : '/driverList',
+    templateUrl : 'templates/driverList.html',
+    controller : 'driverListController'
+  })
   .state('addVehicle', {
     url : '/addVehicle',
     templateUrl: 'templates/addVehicle.html',
     controller : 'addVehicleController'
+  })
+  .state('browseDevices', {
+    url : '/browseDevices',
+    templateUrl : 'templates/browseDevices.html',
+    controller : 'browseDevicesController'
   });
 
   $urlRouterProvider.otherwise('/login');
 
-});
+})
+
+.config(function (ionicDatePickerProvider) {
+    var datePickerObj = {
+      inputDate: new Date(),
+      titleLabel: 'Select a Date',
+      setLabel: 'Set',
+      todayLabel: 'Today',
+      closeLabel: 'Close',
+      mondayFirst: false,
+      weeksList: ["S", "M", "T", "W", "T", "F", "S"],
+      monthsList: ["Jan", "Feb", "March", "April", "May", "June", "July", "Aug", "Sept", "Oct", "Nov", "Dec"],
+      templateType: 'popup',
+      from: new Date(2012, 8, 1),
+      to: new Date(2018, 8, 1),
+      showTodayButton: true,
+      dateFormat: 'dd MMMM yyyy',
+      closeOnSelect: false,
+      disableWeekdays: []
+    };
+    ionicDatePickerProvider.configDatePicker(datePickerObj);
+  });

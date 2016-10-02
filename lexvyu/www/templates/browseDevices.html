@@ -3,8 +3,8 @@
     
     <ion-nav-bar class="bar-positive" align-title="center">    
          <ion-nav-title>
-        Browse devices (4)
-	  <img src="images/image49.png" class="heads">
+	  <img src="images/image49.png" class="navigationImage">
+	  Browse devices (4)
         </ion-nav-title>
         
         <ion-nav-back-button>
@@ -13,14 +13,18 @@
     
     
     
-    <ion-content>
+    <ion-content class="has-header">
         
-      
-	
+      <ion-list>
+		  <ion-item ng-repeat="device in devices" ng-value="device" ng-model="data.selectedDevice">
+				<h3>ID: {{device.DeviceId}}</h3>
+        		<h3>EMEI : #{{device.IMEINumber}}</h3>
+		  </ion-item>
+      </ion-list>
 	
 	
 
-	<section class="ddd">
+	<!--<section class="ddd">
 
 	<div class="main">
 	<div class="left">
@@ -110,7 +114,7 @@ EMEI # EUIMS90923423490</span>
 	
 
 	
-	</div>
+	</div>-->
 	
         
         

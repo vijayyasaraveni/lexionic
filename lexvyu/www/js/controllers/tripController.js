@@ -1,42 +1,19 @@
 var app = angular.module('starter.controllers');
 
-app.controller('createTripController', function($scope, $state, $location, $ionicLoading, routeListService){
+app.controller('createTripController', function($scope, $state, $location, $ionicLoading, routeListService, ionicDatePicker, tripFactory){
   
-  console.log("i am here");
+  $scope.input = tripFactory;
 
-  $scope.routes = [];
-  $scope.routesCount = 0;
-  $scope.data = {
-    selectedRoute: ''
-  };
-  loadRemoteData();
+    console.log("inside createTripController :::::: "+JSON.stringify($scope.input));
 
+  // $scope.nextButtonClick = function(){
 
-  function loadRemoteData() {
-                    // The friendService returns a promise.
-                    $ionicLoading.show();
-                    routeListService.getRouteList().then(
-                            function( response ) {
-                              console.log("response from >>> "+response);
-                                applyRemoteData( response );
-                                $ionicLoading.hide();
-                            });
-                }
+  //   alert("i am here");
 
-  function applyRemoteData( response ) {
+  //   console.log("selected value :::::::: "+$scope.data.selectedRoute.RouteId);
 
-      $scope.routesCount = response.RoutesCount;
-      $scope.routes = response.Routes;
-}
-  
-  $scope.nextButtonClick = function(){
-
-    alert("i am here");
-
-    console.log("selected value :::::::: "+$scope.data.selectedRoute.RouteId);
-
-    $state.go('selectVehicle', {'RouteId': $scope.data.selectedRoute.RouteId});
-  }
+  //   $state.go('selectVehicle', {'RouteId': $scope.data.selectedRoute.RouteId});
+  // }
   
 })
 

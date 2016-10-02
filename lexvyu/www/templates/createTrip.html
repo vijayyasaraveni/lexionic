@@ -1,10 +1,10 @@
-<ion-view>
+<ion-view cache-view="false">
 
 <ion-nav-bar class="bar-positive" align-title="center">
         
-        <!--<ion-nav-title>
-      Create Trip: 1/4- Select a Route
-    </ion-nav-title>-->
+    <ion-nav-title>
+      Create Trip
+    </ion-nav-title>
     
     <ion-nav-back-button>
     </ion-nav-back-button>
@@ -13,40 +13,129 @@
 
 <ion-content class="has-header">
 
+<div class="list">
   
-  <div class="card">
-    <div class="item">
-    <p>Available Routes ({{routes.length}})</p>
+  <div class="item item-divider"></div>
+  <!--Contract selection-->
+  <a class="item item-icon-right" href="#contractList">
+    Contract
+    <span class="item-note">{{input.contract.contractName}}</span>
+    <i class="icon ion-chevron-right" style="color:#ccc; font-size:16px;"></i>
+  </a>
 
-    <p>Selected Value: {{ data.selectedRoute }}</p>
+  <!--Route Selection-->
+  <a class="item  item-icon-right" href="#routeList">
+    Route
+    <span class="item-note">{{input.route.RouteName}}</span>
+    <i class="icon ion-chevron-right" style="color:#ccc; font-size:16px;"></i>
+  </a>
 
-  </div>
-  </div>
+  <div class="item item-divider"></div>
+
+  <!--Device Selection-->
+  <a class="item  item-icon-right" href="#deviceList">
+    Device
+    <span class="item-note">{{input.device.DeviceId}}</span>
+    <i class="icon ion-chevron-right" style="color:#ccc; font-size:16px;"></i>
+  </a>
+
+  <!--Vehicle Selection-->
+  <a class="item  item-icon-right" href="#vehicleList">
+    Vehicle
+    <span class="item-note">{{input.vehicle.VehicleRegistration}}</span>
+    <i class="icon ion-chevron-right" style="color:#ccc; font-size:16px;"></i>
+  </a>
 
 
-  <ion-radio ng-repeat="route in routes" ng-value="route" ng-model="data.selectedRoute">
-    {{ route.RouteName }}
-  </ion-radio>
+  <!--Driver Selection-->
+  <a class="item  item-icon-right" href="#driverList">
+    Driver
+    <span class="item-note">{{input.driver.driverName}}</span>
+    <i class="icon ion-chevron-right" style="color:#ccc; font-size:16px;"></i>
+  </a>
 
+  <!--Trip code-->
+  <label class="item item-input">
+    <span class="input-label">Trip Code</span>
+    <input type="text">
+  </label>
 
-  <!--<ion-list>
-  <ion-item ng-repeat="route in routes" >
-    <ion-radio ng-value="route" ng-model="selctedRoute" class="no-padding">
-      {{route.RouteName}}
-    </ion-radio>     
-  </ion-item>
-</ion-list>-->
+  <div class="item item-divider"></div>
+
+  <!--Odometer Start-->
+  <label class="item item-input">
+    <span class="input-label">Odometer Start</span>
+    <input type="text">
+  </label>
+
+  <!--Odometer End-->
+  <label class="item item-input">
+    <span class="input-label">Odometer End</span>
+    <input type="text">
+  </label>
+
+  <div class="item item-divider"></div>
+
+  <!--Start Time-->
+  <label class="item item-input">
+    <span class="input-label">Start Date</span>
+    <input type="date">
+  </label>
+
+  <!--End Time-->
+  <label class="item item-input">
+    <span class="input-label">End Date</span>
+    <input type="date">
+  </label>
+
+  <div class="item item-divider"></div>
+
+  <!--Carried Capacity-->
+  <label class="item item-input">
+    <span class="input-label">Carried Capacity</span>
+    <input type="text">
+  </label>
+
+  <!--No of Invoices-->
+  <label class="item item-input">
+    <span class="input-label">No of Invoices</span>
+    <input type="text">
+  </label>
+
+  <!--Values of Invoices-->
+  <label class="item item-input">
+    <span class="input-label">Values of Invoices</span>
+    <input type="text">
+  </label>
+
+  <!--Update Frequency-->
+  <label class="item item-input">
+    <span class="input-label">Update Frequency</span>
+    <input type="text">
+  </label>
+  <div class="item item-divider"></div>
+
+</div>
+
+  <label class="item">
+    <button class="button button-block button-positive" ng-click="createTripAction()">Create Trip</button>
+  </label>
+
+  <!--<button class="button button-block button-positive">
+  Create Trip
+</button>-->
+ 
     
 
 
     
 </ion-content>
 
-<div class="bar bar-footer bar-stable" style="text-align:center;">
-  <button class="button  button-block button-clear nextButton" ng-disabled="!data.selectedRoute"  ng-click="nextButtonClick()">
+<!--<div class="bar bar-footer bar-stable" style="text-align:center;">
+  <!--<button class="button  button-block button-clear nextButton" ng-disabled="!data.selectedRoute"  ng-click="nextButtonClick()">
     Next >
-  </button>
-</div>
+  </button>-->
+</div>-->
 
 
 </ion-view>

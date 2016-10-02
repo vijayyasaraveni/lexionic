@@ -8,8 +8,10 @@ app.service("vehicleService", function($http, $q){
 
     function getVehicleList() {
         var request = {
-            method: 'POST',
-            url: 'http://myplug.in/lex2/api.php?action=VehiclesList',
+            // method: 'POST',
+            // url: 'http://myplug.in/lex2/api.php?action=VehiclesList',
+            method: 'GET',
+            url: 'js/JSON/vehicleList.json',
             headers: {
             'Content-Type': 'application/json'
             },

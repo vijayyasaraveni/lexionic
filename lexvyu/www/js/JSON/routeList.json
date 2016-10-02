@@ -1,0 +1,467 @@
+{
+  "CustomerId": "All Routes",
+  "RoutesCount": "46 Routes Found",
+  "Routes": [
+    {
+      "RouteId": "2",
+      "RouteName": "UL BLR-BOM",
+      "CustomerId": "1",
+      "StartLandmarkId": "1",
+      "EndLandmarkId": "2",
+      "TAT": "48",
+      "RadiusInMeters": "5000",
+      "Status": "Active"
+    },
+    {
+      "RouteId": "3",
+      "RouteName": "UL BLR-HYD",
+      "CustomerId": "1",
+      "StartLandmarkId": "1",
+      "EndLandmarkId": "6",
+      "TAT": "20",
+      "RadiusInMeters": "5000",
+      "Status": "Active"
+    },
+    {
+      "RouteId": "4",
+      "RouteName": "UL BLR-COK",
+      "CustomerId": "1",
+      "StartLandmarkId": "1",
+      "EndLandmarkId": "3",
+      "TAT": "48",
+      "RadiusInMeters": "5000",
+      "Status": "Active"
+    },
+    {
+      "RouteId": "5",
+      "RouteName": "UL BLR-CCU",
+      "CustomerId": "1",
+      "StartLandmarkId": "1",
+      "EndLandmarkId": "4",
+      "TAT": "120",
+      "RadiusInMeters": "5000",
+      "Status": "Active"
+    },
+    {
+      "RouteId": "6",
+      "RouteName": "UL BLR-DEL",
+      "CustomerId": "1",
+      "StartLandmarkId": "1",
+      "EndLandmarkId": "5",
+      "TAT": "120",
+      "RadiusInMeters": "5000",
+      "Status": "Active"
+    },
+    {
+      "RouteId": "7",
+      "RouteName": "UL JDH-AMD",
+      "CustomerId": "1",
+      "StartLandmarkId": "9",
+      "EndLandmarkId": "8",
+      "TAT": "72",
+      "RadiusInMeters": "5000",
+      "Status": "Active"
+    },
+    {
+      "RouteId": "8",
+      "RouteName": "UL JDH-JAI",
+      "CustomerId": "1",
+      "StartLandmarkId": "9",
+      "EndLandmarkId": "11",
+      "TAT": "24",
+      "RadiusInMeters": "5000",
+      "Status": "Active"
+    },
+    {
+      "RouteId": "9",
+      "RouteName": "UL JDH-BLR",
+      "CustomerId": "1",
+      "StartLandmarkId": "9",
+      "EndLandmarkId": "1",
+      "TAT": "48",
+      "RadiusInMeters": "5000",
+      "Status": "Active"
+    },
+    {
+      "RouteId": "10",
+      "RouteName": "UL JDH-BOM",
+      "CustomerId": "1",
+      "StartLandmarkId": "9",
+      "EndLandmarkId": "2",
+      "TAT": "48",
+      "RadiusInMeters": "5000",
+      "Status": "Active"
+    },
+    {
+      "RouteId": "11",
+      "RouteName": "UL JDH-CCU",
+      "CustomerId": "1",
+      "StartLandmarkId": "9",
+      "EndLandmarkId": "4",
+      "TAT": "",
+      "RadiusInMeters": "5000",
+      "Status": "Active"
+    },
+    {
+      "RouteId": "12",
+      "RouteName": "UL JDH-DEL",
+      "CustomerId": "1",
+      "StartLandmarkId": "9",
+      "EndLandmarkId": "5",
+      "TAT": "48",
+      "RadiusInMeters": "5000",
+      "Status": "Active"
+    },
+    {
+      "RouteId": "13",
+      "RouteName": "UL JDH-DELG",
+      "CustomerId": "1",
+      "StartLandmarkId": "9",
+      "EndLandmarkId": "10",
+      "TAT": "48",
+      "RadiusInMeters": "5000",
+      "Status": "Active"
+    },
+    {
+      "RouteId": "14",
+      "RouteName": "UL BLR-CHE",
+      "CustomerId": "1",
+      "StartLandmarkId": "1",
+      "EndLandmarkId": "7",
+      "TAT": "",
+      "RadiusInMeters": "5000",
+      "Status": "Active"
+    },
+    {
+      "RouteId": "15",
+      "RouteName": "UL BLR BLR",
+      "CustomerId": "1",
+      "StartLandmarkId": "1",
+      "EndLandmarkId": "1",
+      "TAT": "",
+      "RadiusInMeters": "5000",
+      "Status": "Active"
+    },
+    {
+      "RouteId": "16",
+      "RouteName": "UL JDH-MUM",
+      "CustomerId": "1",
+      "StartLandmarkId": "9",
+      "EndLandmarkId": "2",
+      "TAT": "48",
+      "RadiusInMeters": "5000",
+      "Status": "Active"
+    },
+    {
+      "RouteId": "17",
+      "RouteName": "UL BLR-MUM",
+      "CustomerId": "1",
+      "StartLandmarkId": "1",
+      "EndLandmarkId": "2",
+      "TAT": "48",
+      "RadiusInMeters": "5000",
+      "Status": "Active"
+    },
+    {
+      "RouteId": "18",
+      "RouteName": "MK BANG TO JAIP",
+      "CustomerId": "5",
+      "StartLandmarkId": "12",
+      "EndLandmarkId": "13",
+      "TAT": "20",
+      "RadiusInMeters": "5000",
+      "Status": "Active"
+    },
+    {
+      "RouteId": "22",
+      "RouteName": "AC MAA-HYD",
+      "CustomerId": "6",
+      "StartLandmarkId": "15",
+      "EndLandmarkId": "16",
+      "TAT": "16",
+      "RadiusInMeters": "5000",
+      "Status": "Active"
+    },
+    {
+      "RouteId": "23",
+      "RouteName": "PT MUM-Dahej",
+      "CustomerId": "7",
+      "StartLandmarkId": "20",
+      "EndLandmarkId": "65",
+      "TAT": "13",
+      "RadiusInMeters": "5000",
+      "Status": "Active"
+    },
+    {
+      "RouteId": "25",
+      "RouteName": "CC MAA-MDU",
+      "CustomerId": "3",
+      "StartLandmarkId": "23",
+      "EndLandmarkId": "",
+      "TAT": "8",
+      "RadiusInMeters": "5000",
+      "Status": "Active"
+    },
+    {
+      "RouteId": "26",
+      "RouteName": "CC MAA-TEN",
+      "CustomerId": "3",
+      "StartLandmarkId": "23",
+      "EndLandmarkId": "",
+      "TAT": "10",
+      "RadiusInMeters": "5000",
+      "Status": "Active"
+    },
+    {
+      "RouteId": "27",
+      "RouteName": "BMT Jodhpur-Mumbai",
+      "CustomerId": "8",
+      "StartLandmarkId": "9",
+      "EndLandmarkId": "",
+      "TAT": "16",
+      "RadiusInMeters": "5000",
+      "Status": "Active"
+    },
+    {
+      "RouteId": "28",
+      "RouteName": "MKC MAA-TEN",
+      "CustomerId": "10",
+      "StartLandmarkId": "28",
+      "EndLandmarkId": "29",
+      "TAT": "10",
+      "RadiusInMeters": "5000",
+      "Status": "Active"
+    },
+    {
+      "RouteId": "29",
+      "RouteName": "UL TEST1-TEST2",
+      "CustomerId": "1",
+      "StartLandmarkId": "",
+      "EndLandmarkId": "",
+      "TAT": "10",
+      "RadiusInMeters": "1000",
+      "Status": null
+    },
+    {
+      "RouteId": "30",
+      "RouteName": "UL TEST1-TEST2",
+      "CustomerId": "1",
+      "StartLandmarkId": "33",
+      "EndLandmarkId": "34",
+      "TAT": "10",
+      "RadiusInMeters": "1000",
+      "Status": null
+    },
+    {
+      "RouteId": "31",
+      "RouteName": "UL NEW-OLD",
+      "CustomerId": "1",
+      "StartLandmarkId": "35",
+      "EndLandmarkId": "36",
+      "TAT": "10",
+      "RadiusInMeters": "1000",
+      "Status": null
+    },
+    {
+      "RouteId": "32",
+      "RouteName": "UL TEST1-TEST2",
+      "CustomerId": "1",
+      "StartLandmarkId": "37",
+      "EndLandmarkId": "38",
+      "TAT": "10",
+      "RadiusInMeters": "1000",
+      "Status": null
+    },
+    {
+      "RouteId": "33",
+      "RouteName": "UL NEW-OLD",
+      "CustomerId": "1",
+      "StartLandmarkId": "39",
+      "EndLandmarkId": "40",
+      "TAT": "10",
+      "RadiusInMeters": "1000",
+      "Status": null
+    },
+    {
+      "RouteId": "34",
+      "RouteName": "",
+      "CustomerId": "11",
+      "StartLandmarkId": "41",
+      "EndLandmarkId": "42",
+      "TAT": "3",
+      "RadiusInMeters": "1000",
+      "Status": null
+    },
+    {
+      "RouteId": "35",
+      "RouteName": "",
+      "CustomerId": "",
+      "StartLandmarkId": "43",
+      "EndLandmarkId": "44",
+      "TAT": "",
+      "RadiusInMeters": "",
+      "Status": null
+    },
+    {
+      "RouteId": "36",
+      "RouteName": "Chennai to Bangalore",
+      "CustomerId": "1",
+      "StartLandmarkId": "45",
+      "EndLandmarkId": "46",
+      "TAT": "6",
+      "RadiusInMeters": "100",
+      "Status": null
+    },
+    {
+      "RouteId": "37",
+      "RouteName": "mkc sample",
+      "CustomerId": "10",
+      "StartLandmarkId": "47",
+      "EndLandmarkId": "50",
+      "TAT": "10",
+      "RadiusInMeters": "1000",
+      "Status": null
+    },
+    {
+      "RouteId": "38",
+      "RouteName": "UL BLR-MAA",
+      "CustomerId": "1",
+      "StartLandmarkId": "1",
+      "EndLandmarkId": "7",
+      "TAT": "12",
+      "RadiusInMeters": "2000",
+      "Status": "Active"
+    },
+    {
+      "RouteId": "39",
+      "RouteName": "UL NEW-OLD VELACHERY",
+      "CustomerId": "1",
+      "StartLandmarkId": "57",
+      "EndLandmarkId": "62",
+      "TAT": "30",
+      "RadiusInMeters": "1000",
+      "Status": null
+    },
+    {
+      "RouteId": "40",
+      "RouteName": "DTDC BLR-BOM",
+      "CustomerId": "4",
+      "StartLandmarkId": "63",
+      "EndLandmarkId": "64",
+      "TAT": "20",
+      "RadiusInMeters": "4000",
+      "Status": "Active"
+    },
+    {
+      "RouteId": "41",
+      "RouteName": "PT JOD-BAN",
+      "CustomerId": "7",
+      "StartLandmarkId": "66",
+      "EndLandmarkId": "67",
+      "TAT": "11",
+      "RadiusInMeters": "4000",
+      "Status": null
+    },
+    {
+      "RouteId": "42",
+      "RouteName": "OLOG BLR-MAA",
+      "CustomerId": "14",
+      "StartLandmarkId": "68",
+      "EndLandmarkId": "69",
+      "TAT": "24",
+      "RadiusInMeters": "5000",
+      "Status": "Active"
+    },
+    {
+      "RouteId": "43",
+      "RouteName": "OLOG BLR-MAA CHI",
+      "CustomerId": "14",
+      "StartLandmarkId": "70",
+      "EndLandmarkId": "72",
+      "TAT": "24",
+      "RadiusInMeters": "3000",
+      "Status": "Active"
+    },
+    {
+      "RouteId": "44",
+      "RouteName": "PTMDOM- Dahej",
+      "CustomerId": "",
+      "StartLandmarkId": "73",
+      "EndLandmarkId": "74",
+      "TAT": "",
+      "RadiusInMeters": "100",
+      "Status": null
+    },
+    {
+      "RouteId": "45",
+      "RouteName": "Olog Blr Maa",
+      "CustomerId": "17",
+      "StartLandmarkId": "76",
+      "EndLandmarkId": "77",
+      "TAT": "24",
+      "RadiusInMeters": "10000",
+      "Status": "Active"
+    },
+    {
+      "RouteId": "46",
+      "RouteName": "",
+      "CustomerId": "17",
+      "StartLandmarkId": "78",
+      "EndLandmarkId": "79",
+      "TAT": "",
+      "RadiusInMeters": "",
+      "Status": null
+    },
+    {
+      "RouteId": "47",
+      "RouteName": "JS",
+      "CustomerId": "20",
+      "StartLandmarkId": "81",
+      "EndLandmarkId": "81",
+      "TAT": "1109",
+      "RadiusInMeters": "1000",
+      "Status": "Active"
+    },
+    {
+      "RouteId": "48",
+      "RouteName": "BB HYD-CCU",
+      "CustomerId": "21",
+      "StartLandmarkId": "82",
+      "EndLandmarkId": "83",
+      "TAT": "72",
+      "RadiusInMeters": "1000",
+      "Status": "Active"
+    },
+    {
+      "RouteId": "49",
+      "RouteName": "MKC Delhi- Banglore",
+      "CustomerId": "10",
+      "StartLandmarkId": "84",
+      "EndLandmarkId": "85",
+      "TAT": "48",
+      "RadiusInMeters": "1000",
+      "Status": null
+    },
+    {
+      "RouteId": "50",
+      "RouteName": "OLOG BLR-CCU",
+      "CustomerId": "14",
+      "StartLandmarkId": "68",
+      "EndLandmarkId": "89",
+      "TAT": "120",
+      "RadiusInMeters": "1000",
+      "Status": "Active"
+    },
+    {
+      "RouteId": "51",
+      "RouteName": "OLOG BLR-DEL ",
+      "CustomerId": "14",
+      "StartLandmarkId": "68",
+      "EndLandmarkId": "92",
+      "TAT": "120",
+      "RadiusInMeters": "1000",
+      "Status": "Active"
+    },
+    null
+  ]
+}

@@ -7,9 +7,14 @@
         
         <ion-nav-back-button>
         </ion-nav-back-button>
+
+        <ion-nav-buttons side="right"> <!-- right -->
+          <button class="button button-icon" ng-click="selectDeviceAction()"> Done </button>
+        </ion-nav-buttons>
+
     </ion-nav-bar>
     
-    <ion-header-bar class="bar-light bar-subheader">
+    <ion-header-bar class="bar-light bar-subheader has-header">
 
       <ion-searchbar placeholder="Enter Zipcode" filtertext="search"></ion-searchbar>
       <!--<input type="text" placeholder="Search Force" data-ng-model="searchForce">
@@ -27,7 +32,7 @@
          
 
 
-      <ion-radio ng-repeat="device in devices ">
+      <ion-radio ng-repeat="device in devices " ng-value="device" ng-model="data.selectedDevice">
         <h3>ID: {{device.DeviceId}}</h3>
         <h3>EMEI : #{{device.IMEINumber}}</h3>
       </ion-radio>

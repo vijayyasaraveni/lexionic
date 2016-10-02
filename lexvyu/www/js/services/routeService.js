@@ -9,8 +9,10 @@ app.service('routeListService', function ($http, $q) {
 
                 function getRouteList() {
                     var request = {
-                        method: 'POST',
-                        url: 'http://myplug.in/lex2/api.php?action=RoutesList',
+                        // method: 'POST',
+                        // url: 'http://myplug.in/lex2/api.php?action=RoutesList',
+                        method: 'GET',
+                        url: 'js/JSON/routeList.json',
                         headers: {
                         'Content-Type': 'application/json'
                         },

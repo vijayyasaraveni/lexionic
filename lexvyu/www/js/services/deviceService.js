@@ -8,8 +8,10 @@ app.service("deviceService", function($http, $q){
 
     function getDeviceList() {
         var request = {
-            method: 'POST',
-            url: 'http://myplug.in/lex2/api.php?action=DevicesList',
+            // method: 'POST',
+            // url: 'http://myplug.in/lex2/api.php?action=DevicesList',
+            method: 'GET',
+            url: 'js/JSON/deviceList.json',
             headers: {
             'Content-Type': 'application/json'
             },

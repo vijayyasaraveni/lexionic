@@ -1,0 +1,29 @@
+<ion-view >
+
+    <ion-nav-bar class="bar-positive" align-title="center">    
+         <ion-nav-title>
+        Select Driver
+        </ion-nav-title>
+        
+        <ion-nav-back-button>
+        </ion-nav-back-button>
+
+        <ion-nav-buttons side="right"> <!-- right -->
+            <button class="button button-icon" ng-click="selectDriverButtonAction()"> Done </button>
+        </ion-nav-buttons>
+
+
+    </ion-nav-bar>
+
+
+    <ion-content class="padding has-header">
+
+        <ion-radio ng-repeat="driver in drivers" ng-value="driver" ng-model="data.selectedDriver">
+            <div>
+                <span>{{driver.driverName}}</span>
+            </div>
+        </ion-radio>
+
+    </ion-content>
+
+</ion-view>

@@ -1,1 +1,25 @@
 /* Empty. Add your own CSS if you like */
+
+.textCenter {
+    text-align: center;
+}
+
+.remove-list-leftPadding{
+    padding-left: 0px;
+}
+
+.navigationBarMargin{
+    margin-top: 50px;
+}
+
+.subHeaderTitle{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.navigationImage{
+    position: absolute;
+    margin-left: -50px;
+    width: 45px;
+    margin-top: 10px;
+}

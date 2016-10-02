@@ -1,0 +1,14 @@
+{
+    "contracts" : [
+        {
+            "id" : "1",
+            "contractName": "Urbanladder Bangalore"
+        },
+        {
+            "id" : "2",
+            "contractName": "Urban Ladder Jodhpur"
+        }
+    ]
+
+
+}

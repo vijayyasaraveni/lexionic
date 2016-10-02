@@ -1,0 +1,29 @@
+<ion-view >
+
+<ion-nav-bar class="bar-positive" align-title="center">
+        
+        <ion-nav-title>
+       Select Contract
+    </ion-nav-title>
+    
+    <ion-nav-back-button>
+    </ion-nav-back-button>
+
+    <ion-nav-buttons side="right"> <!-- right -->
+   <button class="button button-icon" ng-click="selectContractAction()"> Done </button>
+ </ion-nav-buttons>
+
+</ion-nav-bar>
+
+
+<ion-content class="has-header">
+
+  <p>{{data.selectedContract}}</p>
+
+    <ion-radio ng-repeat="contract in contracts" ng-value="contract" ng-model="data.selectedContract">
+    {{ contract.contractName }}
+  </ion-radio>
+
+</ion-content>
+
+</ion-view>
