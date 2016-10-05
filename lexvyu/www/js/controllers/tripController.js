@@ -6,6 +6,26 @@ app.controller('createTripController', function($scope, $state, $location, $ioni
 
     console.log("inside createTripController :::::: "+JSON.stringify($scope.input));
 
+    $scope.showDatePicker = function(){
+
+      var options = {
+          date: new Date(),
+          mode: 'date', // or 'time'
+          minDate: new Date() - 10000,
+          allowOldDates: true,
+          allowFutureDates: false,
+          doneButtonLabel: 'DONE',
+          doneButtonColor: '#F2F3F4',
+          cancelButtonLabel: 'CANCEL',
+          cancelButtonColor: '#000000'
+       };
+
+       $cordovaDatePicker.show(options).then(function(date){
+          alert(date);
+       });
+
+    }
+
   // $scope.nextButtonClick = function(){
 
   //   alert("i am here");
@@ -23,8 +43,44 @@ app.controller('createTripController', function($scope, $state, $location, $ioni
   }
 })
 
-.controller('tripDetailsController', function($state, $location, $scope){
-  $scope.createTrip = function(){
-    $state.go('home');
+.controller('tripDetailsController', function($state, $location, $scope, $ionicLoading, tripService, tripFactory){
+  
+
+   $scope.input = tripFactory;
+
+  console.log("inside deviceListController :::::::: "+JSON.stringify($scope.input));
+
+
+  $scope.tripDetails = {};
+  $scope.deviceCount = 0;
+  $scope.deviceListEmpty = false;
+
+  $scope.data = {
+    selectedDevice: null
   }
+
+  getTripDetails();
+
+  function getTripDetails() {
+    $ionicLoading.show();
+    tripService.getTripDetails().then(
+      function( response ) {
+          console.log("response from >>> "+response);
+          applyRemoteDeviceList(response);
+          $ionicLoading.hide();
+      });
+  }
+
+function applyRemoteDeviceList(response){
+      $scope.tripDetails = response.TripDetails[0];
+
+      // if($scope.devices.length > 0){
+      //   $scope.deviceListEmpty = true;
+      // }else{
+      //   $scope.deviceListEmpty = false;
+      // }
+  }
+
+
+
 });

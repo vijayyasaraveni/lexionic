@@ -27,14 +27,6 @@ angular.module('starter',  ['ionic', 'starter.controllers', 'ui.router', 'starte
 
   $stateProvider
 
-   
-  
-  .state('tripDetails', {
-    url : '/tripDetails',
-    templateUrl : 'templates/tripDetails.html',
-    controller : 'tripDetailsController' 
-  })
-  
   .state('recieveDevices', {
     url : '/recieveDevices',
     templateUrl : 'templates/recieveDevices.html',
@@ -118,6 +110,11 @@ angular.module('starter',  ['ionic', 'starter.controllers', 'ui.router', 'starte
     url : '/browseDevices',
     templateUrl : 'templates/browseDevices.html',
     controller : 'browseDevicesController'
+  })
+  .state('tripDetails', {
+    url : '/tripDetails',
+    templateUrl : 'templates/tripDetails.html',
+    controller : 'tripDetailsController' 
   });
 
   $urlRouterProvider.otherwise('/login');

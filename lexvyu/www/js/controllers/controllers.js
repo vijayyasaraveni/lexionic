@@ -1,4 +1,4 @@
-angular.module('starter.controllers', [])
+angular.module('starter.controllers', ['ionic-datepicker'])
 
 
 .controller('loginController', function($scope, $state,  $location){
